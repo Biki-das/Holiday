@@ -8,7 +8,7 @@
   </head>
   <body>
     <div id="app"></div>
-    <audio id="musicplayer" autoplay>
+    <audio id="musicplayer">
       <source
         src="https://storage.cloud.google.com/biki_bucket/we-wish-you-a-merry-christmas-xmas-background-short-music-30-second-178228.mp3"
       />
@@ -116,7 +116,12 @@ Snowflake SVG from SVG Repo - https://www.svgrepo.com/svg/121265/snowflake : CC0
       />
     </svg>
     <!-- Inside the SVG tag -->
-
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        let audio = document.getElementById('musicplayer');
+        audio.play();
+      });
+    </script>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

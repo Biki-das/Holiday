@@ -28,11 +28,6 @@ import { SVGLoader as i } from 'three/addons/loaders/SVGLoader.js';
 
 import { Flow as l } from 'three/addons/modifiers/CurveModifier.js';
 
-window.addEventListener('DOMContentLoaded', () => {
-  let audio = document.getElementsByTagName('audio');
-  audio.play();
-});
-
 let h = await new t().loadAsync(
   'https://raw.githubusercontent.com/mrdoob/three.js/dev/examples/textures/equirectangular/blouberg_sunrise_2_1k.hdr'
 );
